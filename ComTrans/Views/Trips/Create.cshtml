@@ -1,0 +1,67 @@
+﻿@model ComTrans.Models.Trip
+
+@{
+    ViewBag.Title = "Создание";
+}
+
+<br />
+
+
+@using (Html.BeginForm(new { ids = ViewBag.ids }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+          <h4>Добавить рейс</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.DriverId, "Водитель", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("DriverId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DriverId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CarId, "Автомобиль", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10" style="display:flex;">
+                @Html.DropDownList("CarId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CarId, "", new { @class = "text-danger" })
+                @Html.ActionLink("Добавить автомобиль", "Create", "Cars", new { ids = ViewBag.ids }, new { @class = "btn btn-default", @style = "margin-left:10px" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Route, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*Html.EditorFor(model => model.Route, new { htmlAttributes = new { @class = "form-control", @value="нет" } })*@
+                <input class="form-control text-box single-line" id="Route" name="Route" type="text" value="нет">
+                @Html.ValidationMessageFor(model => model.Route, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })*@
+                <input class="form-control text-box single-line valid" data-val="true" data-val-date="The field Дата поставки must be a date." data-val-required="The Дата поставки field is required." id="Date" name="Date" type="date" value="">
+                @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Создать" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Назад к списку", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

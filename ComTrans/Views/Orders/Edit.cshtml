@@ -1,0 +1,97 @@
+﻿@model ComTrans.Models.Order
+
+@{
+    ViewBag.Title = "Изменение";
+}
+<br />
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Изменить заказ</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ClientId, "Клиент", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ClientId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ClientId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control" } })*@
+                <input class="form-control text-box single-line valid" data-val="true" data-val-date="The field Дата поставки must be a date." data-val-required="The Дата поставки field is required." id="Date" name="Date" type="date" value="@Model.Date.ToString("yyyy-MM-dd")">
+                @Html.ValidationMessageFor(model => model.Date, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Сохранить" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<h4>Грузы</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:20%;">Наимнование</th>
+            <th>Количество</th>
+            <th>Цена</th>
+            <th>Вес</th>
+            <th style="width:10%;"></th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var cargo in Model.Cargoes)
+        {
+            <tr>
+                <td>@cargo.Name</td>
+                <td>@cargo.Count</td>
+                <td>@cargo.Price</td>
+                <td>@cargo.Weight</td>
+                <td>@Html.ActionLink("Изменить", "Edit","Cargoes", new { id=cargo.Id, orderId = Model.Id }, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h4>Адреса доставки</h4>
+<table class="table">
+    <thead>
+        <tr>
+            <th style="width:20%;">Адрес</th>
+            <th>Координаты</th>
+            <th style="width:10%;"></th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var address in Model.Addresses)
+        {
+            <tr>
+                <td>@address.Address1</td>
+                <td>@address.Coord</td>
+                <td>@Html.ActionLink("Изменить", "Edit", "Addresses", new { id = address.Id, orderId = Model.Id }, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @Html.ActionLink("Назад к списку", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

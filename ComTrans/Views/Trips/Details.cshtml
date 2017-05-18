@@ -1,0 +1,77 @@
+﻿@model ComTrans.Models.Trip
+
+@{
+    ViewBag.Title = "Подробнее";
+}
+
+<br />
+
+<div>
+<h4>Подробнее о рейсе</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Route)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Route)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Model.Date.Value.ToShortDateString()
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Car.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Car.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Driver.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Driver.Name)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Адрес</th>
+                <th>Клиент</th>
+                <th>Номер заказа</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var address in Model.TripAddresses)
+            {
+                <tr>
+                    <td>@address.Address.Address1</td>
+                    <td>@address.Address.Order.Client.Name</td>
+                    <td>@address.Address.Order.Id</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<button type="button" class="btn btn-default">Оптимизировать маршрут</button>
+
+<p/>
+
+
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

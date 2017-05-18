@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ComTransModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Address1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Address_Orders" FromRole="Address" ToRole="Orders" />
+    <NavigationProperty Name="TripAddresses" Relationship="Self.FK_TripAddress_Address" FromRole="Address" ToRole="TripAddress" />
+    <Property Name="Coord" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Cargo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Count" Type="Int32" />
+    <Property Name="Weight" Type="Int32" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_Cargoes_Orders" FromRole="Cargoes" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Capacity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Trips" Relationship="Self.FK_Trip_Cars" FromRole="Cars" ToRole="Trip" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_Orders_Clients" FromRole="Clients" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Trips" Relationship="Self.FK_Trip_Drivers" FromRole="Drivers" ToRole="Trip" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClientId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Addresses" Relationship="Self.FK_Address_Orders" FromRole="Orders" ToRole="Address" />
+    <NavigationProperty Name="Cargoes" Relationship="Self.FK_Cargoes_Orders" FromRole="Orders" ToRole="Cargoes" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Orders_Clients" FromRole="Orders" ToRole="Clients" />
+  </EntityType>
+  <EntityType Name="Trip">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DriverId" Type="Int32" Nullable="false" />
+    <Property Name="CarId" Type="Int32" Nullable="false" />
+    <Property Name="Route" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Car" Relationship="Self.FK_Trip_Cars" FromRole="Trip" ToRole="Cars" />
+    <NavigationProperty Name="Driver" Relationship="Self.FK_Trip_Drivers" FromRole="Trip" ToRole="Drivers" />
+    <NavigationProperty Name="TripAddresses" Relationship="Self.FK_TripAddress_Trip" FromRole="Trip" ToRole="TripAddress" />
+  </EntityType>
+  <EntityType Name="TripAddress">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AddressId" Type="Int32" Nullable="false" />
+    <Property Name="TripId" Type="Int32" Nullable="false" />
+    <Property Name="Num" Type="Int32" />
+    <NavigationProperty Name="Address" Relationship="Self.FK_TripAddress_Address" FromRole="TripAddress" ToRole="Address" />
+    <NavigationProperty Name="Trip" Relationship="Self.FK_TripAddress_Trip" FromRole="TripAddress" ToRole="Trip" />
+  </EntityType>
+  <Association Name="FK_Address_Orders">
+    <End Role="Orders" Type="Self.Order" Multiplicity="1" />
+    <End Role="Address" Type="Self.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TripAddress_Address">
+    <End Role="Address" Type="Self.Address" Multiplicity="1" />
+    <End Role="TripAddress" Type="Self.TripAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Address">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TripAddress">
+        <PropertyRef Name="AddressId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cargoes_Orders">
+    <End Role="Orders" Type="Self.Order" Multiplicity="1" />
+    <End Role="Cargoes" Type="Self.Cargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cargoes">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trip_Cars">
+    <End Role="Cars" Type="Self.Car" Multiplicity="1" />
+    <End Role="Trip" Type="Self.Trip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Trip">
+        <PropertyRef Name="CarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Clients">
+    <End Role="Clients" Type="Self.Client" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trip_Drivers">
+    <End Role="Drivers" Type="Self.Driver" Multiplicity="1" />
+    <End Role="Trip" Type="Self.Trip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Drivers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Trip">
+        <PropertyRef Name="DriverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TripAddress_Trip">
+    <End Role="Trip" Type="Self.Trip" Multiplicity="1" />
+    <End Role="TripAddress" Type="Self.TripAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trip">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TripAddress">
+        <PropertyRef Name="TripId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ComTransEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addresses" EntityType="Self.Address" />
+    <EntitySet Name="Cargoes" EntityType="Self.Cargo" />
+    <EntitySet Name="Cars" EntityType="Self.Car" />
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="Drivers" EntityType="Self.Driver" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Trips" EntityType="Self.Trip" />
+    <EntitySet Name="TripAddresses" EntityType="Self.TripAddress" />
+    <AssociationSet Name="FK_Address_Orders" Association="Self.FK_Address_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TripAddress_Address" Association="Self.FK_TripAddress_Address">
+      <End Role="Address" EntitySet="Addresses" />
+      <End Role="TripAddress" EntitySet="TripAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cargoes_Orders" Association="Self.FK_Cargoes_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="Cargoes" EntitySet="Cargoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trip_Cars" Association="Self.FK_Trip_Cars">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="Trip" EntitySet="Trips" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Clients" Association="Self.FK_Orders_Clients">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trip_Drivers" Association="Self.FK_Trip_Drivers">
+      <End Role="Drivers" EntitySet="Drivers" />
+      <End Role="Trip" EntitySet="Trips" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TripAddress_Trip" Association="Self.FK_TripAddress_Trip">
+      <End Role="Trip" EntitySet="Trips" />
+      <End Role="TripAddress" EntitySet="TripAddresses" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,56 @@
+﻿@model ComTrans.Models.Trip
+
+@{
+    ViewBag.Title = "Удаление";
+}
+
+<br />
+
+
+<div>
+   <h4>Удалить рейс</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Route)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Route)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Car.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Car.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Driver.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Driver.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад к списку", "Index")
+        </div>
+    }
+</div>

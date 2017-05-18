@@ -1,0 +1,40 @@
+﻿@model ComTrans.Models.Address
+
+@{
+    ViewBag.Title = "Подробнее";
+}
+<br />
+
+<div>
+<h4>Подробнее об адресе</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Address1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Coord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coord)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Заказ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.Id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

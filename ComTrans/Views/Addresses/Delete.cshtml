@@ -1,0 +1,46 @@
+﻿@model ComTrans.Models.Address
+
+@{
+    ViewBag.Title = "Удаление";
+}
+<br />
+
+<div>
+ <h4>Удалить адрес</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Address1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coord)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Заказ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.Id)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Удалить" class="btn btn-default" /> |
+            @Html.ActionLink("Назад к списку", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,41 @@
+﻿@model ComTrans.Models.TripAddress
+
+@{
+    ViewBag.Title = "Подробнее";
+}
+<br />
+
+<div>
+    <h4>Подробнее о маршруте</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Num)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Num)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.Address1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.Address1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trip.Route)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trip.Route)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Изменить", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Назад к списку", "Index")
+</p>

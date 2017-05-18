@@ -1,0 +1,150 @@
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\ComTrans.dll.config
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\ComTrans.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\ComTrans.pdb
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\Antlr3.Runtime.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\EntityFramework.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\EntityFramework.SqlServer.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\Microsoft.Web.Infrastructure.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\Newtonsoft.Json.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.Helpers.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.Mvc.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.Optimization.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.Razor.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.WebPages.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\WebGrease.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\EntityFramework.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\EntityFramework.SqlServer.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.Helpers.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.Mvc.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.Optimization.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.Razor.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.WebPages.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\Antlr3.Runtime.pdb
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\bin\Newtonsoft.Json.xml
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\obj\Debug\ComTrans.csprojResolveAssemblyReference.cache
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\obj\Debug\ComTrans.dll
+c:\users\otm\documents\visual studio 2013\Projects\ComTrans\ComTrans\obj\Debug\ComTrans.pdb
+D:\ComTrans\ComTrans\ComTrans\bin\ComTrans.dll.config
+D:\ComTrans\ComTrans\ComTrans\bin\ComTrans.dll
+D:\ComTrans\ComTrans\ComTrans\bin\ComTrans.pdb
+D:\ComTrans\ComTrans\ComTrans\bin\Antlr3.Runtime.dll
+D:\ComTrans\ComTrans\ComTrans\bin\EntityFramework.dll
+D:\ComTrans\ComTrans\ComTrans\bin\EntityFramework.SqlServer.dll
+D:\ComTrans\ComTrans\ComTrans\bin\Microsoft.Web.Infrastructure.dll
+D:\ComTrans\ComTrans\ComTrans\bin\Newtonsoft.Json.dll
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.Helpers.dll
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.Mvc.dll
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.Optimization.dll
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.Razor.dll
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.dll
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.dll
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.dll
+D:\ComTrans\ComTrans\ComTrans\bin\WebGrease.dll
+D:\ComTrans\ComTrans\ComTrans\bin\EntityFramework.xml
+D:\ComTrans\ComTrans\ComTrans\bin\EntityFramework.SqlServer.xml
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.Helpers.xml
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.Mvc.xml
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.Optimization.xml
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.Razor.xml
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.xml
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.xml
+D:\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.xml
+D:\ComTrans\ComTrans\ComTrans\bin\Antlr3.Runtime.pdb
+D:\ComTrans\ComTrans\ComTrans\bin\Newtonsoft.Json.xml
+D:\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.dll
+D:\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.pdb
+D:\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.csprojResolveAssemblyReference.cache
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\ComTrans.dll.config
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\ComTrans.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\ComTrans.pdb
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\Antlr3.Runtime.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\EntityFramework.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\EntityFramework.SqlServer.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\Newtonsoft.Json.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.Helpers.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.Mvc.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.Optimization.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.Razor.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\WebGrease.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\EntityFramework.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\EntityFramework.SqlServer.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.Helpers.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.Mvc.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.Optimization.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.Razor.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\Antlr3.Runtime.pdb
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\bin\Newtonsoft.Json.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.csprojResolveAssemblyReference.cache
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.pdb
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\ComTrans.dll.config
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\ComTrans.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\ComTrans.pdb
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\Antlr3.Runtime.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\EntityFramework.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\EntityFramework.SqlServer.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\Microsoft.Web.Infrastructure.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\Newtonsoft.Json.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Helpers.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Mvc.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Optimization.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Razor.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\WebGrease.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\EntityFramework.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\EntityFramework.SqlServer.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Helpers.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Mvc.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Optimization.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Razor.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\Antlr3.Runtime.pdb
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\bin\Newtonsoft.Json.xml
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.csprojResolveAssemblyReference.cache
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.dll
+D:\Institut\Магистратура!!!\!!!Магистерская работа!!!\прога\ComTrans\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.pdb
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\ComTrans.dll.config
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\ComTrans.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\ComTrans.pdb
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\Antlr3.Runtime.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\EntityFramework.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\EntityFramework.SqlServer.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\Newtonsoft.Json.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Helpers.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Mvc.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Optimization.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Razor.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\WebGrease.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\EntityFramework.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\EntityFramework.SqlServer.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Helpers.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Mvc.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Optimization.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.Razor.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Deployment.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\System.Web.WebPages.Razor.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\Antlr3.Runtime.pdb
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\bin\Newtonsoft.Json.xml
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.csprojResolveAssemblyReference.cache
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.dll
+C:\Users\otm\Documents\Visual Studio 2013\Projects\ComTrans\ComTrans\ComTrans\ComTrans\obj\Debug\ComTrans.pdb
